@@ -1,0 +1,699 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    background-image: url('./img/banner_bg.jpg'),url('./img/banner_bg.jpg');
+    /*size contain pr garder image initiale*/
+    background-size: 70% 90%,70% 10%;
+    background-position: top,bottom;
+    /* asso deux bg */
+    clip-path: inset(5% 8% 8% 2%,45% 5% 43% 2%);
+    /* permet rognage affiche une seule zone spé/à travailler */
+    min-height: 635px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    text-transform: uppercase;
+    /* majuscules */
+    font-family: sans-serif;
+}
+nav p{
+    color: #ffffff;
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+nav p::first-letter{
+    color:#F6C45C;
+    font-size: 1.6em;
+}
+label,#burger{
+    display: none;
+}
+#burger{
+    appearance: none;
+    /* retire apparence input vr plus bas pour disparition */
+}
+.cassebonbon ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    mix-blend-mode: difference;
+    /* La propriété mix-blend-mode définit la façon dont le contenu d'un élément doit se mélanger avec le contenu de l'élément parent et avec son arrière-plan.
+     */
+}
+nav a{
+    text-decoration: none;
+    color:#ffffff;
+    margin: 15px;
+    text-align: center;
+    font-size: small;
+}
+#section1{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 140px;
+    /* margin: auto; */
+}
+#section1 h1, #section1 p{
+    text-align: center;
+    color: #ffffff;
+    margin: 20px;
+    font-weight: 400;
+}
+h1 span:first-child{
+    color: #3DC1CD;
+}
+h1 span:last-child{
+    color: #F69536;
+}
+#lets{
+    border: 0px;
+    border-radius: 15px; 
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    /* text-align: center; */
+    background-color: #ffffff; 
+    padding: 10px;
+    height: 30px;  
+    margin: auto;
+}
+
+#main1{
+    font-family: sans-serif;
+    background-image: url('./img/about-bg.jpg'),url('./img/about-bg.jpg');
+    /*size contain pr garder image initiale*/
+    background-size: 70% 88%,70% 12%;
+    background-position: top,bottom;
+    /* asso deux bg */
+    clip-path: inset(5% 8% 8% 2%,45% 5% 43% 2%);
+    /* permet rognage affiche une seule zone spé/à travailler */
+    padding-bottom:8%;
+}
+.flexmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 2%;
+}
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+    color:#ffffff;
+    font-family: sans-serif;
+}
+.card h2{
+    font-size: 18px;
+    /* text-decoration-line: underline;
+    text-underline-offset: 15px;
+    /* séparation txt */
+    /* text-decoration-color: #ffffff32; */ 
+    border-bottom: 2px solid #ffffff32;
+    height: 3em;
+    padding-bottom: 20px;
+    margin: 20px;
+    padding-top: 20px;
+}
+.card p{
+    line-height: 1.5em;
+}
+.card p,.card button{
+    padding: 5px;
+    margin:20px;
+}
+.icone{
+    width : 70px; 
+    height : 70px;
+    /* taille cercle */
+    color:#ffffff;
+    border: 2px solid #ffffff;
+    background-color: #F6C45C;
+    border-radius: 50%;
+    margin: auto;
+    /* centrage */        
+}
+.icone img{
+    width:70%;
+    height: 70%;
+    position: relative;
+    /* positionner vis à vis du parent/de la box parent */
+    top: 15%;
+    /* position % */
+}
+.card button{
+    border-radius: 15px;
+    background-color: #3DC1CD;
+    border: 0px;
+    padding: 8px 3px;
+    width:170px;
+    margin:auto;
+    /* centrer */
+    color: #ffffff;
+    font-weight: bold;
+}
+#section2{
+    color: #ffffff;
+    display: flex;
+}
+#section2 p{
+    line-height: 1.5em;
+}
+#section2 ul::first-line{
+    color: #F6C45C;
+}
+#section2 ul{
+    padding-top: 60px;
+    list-style: none;
+    text-align: left;
+}
+#section2 ul li{
+    padding: 10px;
+    font-weight: 600;
+}
+.blue{
+    background-color: #3DC1CD;
+    padding: 150px 90px 100px;
+    width: 30%;
+}
+.blue h2, .blue p{
+    padding-top: 20px;
+    text-align: left;
+}  
+.blue h2{
+    border-bottom: 2px solid #ffffff32;
+    padding-bottom: 20px;
+    padding-right: 15px;
+}
+.mosaique{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 30px 20px 20px;
+}
+#p1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+#p2{
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+#p3{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+#p4{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+#p5{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+#p6{
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+/* La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur. */
+#section3{
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6C45C;
+    display: flex;
+    text-align: center;
+    padding: 100px;
+}
+#section3 p:first-child{
+    border-radius: 2px;
+    background-color: #ffffff;
+    /* padding: 0px; */
+    color: #AFAFAF;
+    margin: 20px 20px 40px;
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    font-style: italic;
+    font-size: 15px;
+}
+#section3 p{
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+#section3 p:nth-child(2){
+    font-weight: bold;
+}
+#section3 p:nth-child(3){
+    font-size: 13px;
+}
+#section3 .circle{
+    display: flex;
+    justify-content: space-around;
+}
+#section3 .circle1{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff62;
+    margin: 15px 5px 5px 0px;
+}
+#section3 .circle2{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff62;
+    margin: 15px 5px 5px 0px;
+}
+#section3 .circle3{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff62;
+    margin: 15px 5px 5px 0px;
+}
+#section3 .circle4{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    margin: 15px 5px 5px 0px;
+}
+#blog{
+    background-image: url('./img/blog-bg\ \(1\).jpg');
+    display: flex;
+}
+#blogs{
+    background-color: #000000bd;
+    width: 30%;
+    color: #ffffff;
+    padding: 80px 60px 90px 120px;
+    text-align: left;
+}
+#blogs h2{
+    border-bottom: 2px solid #ffffff32;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#blogs p{
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    width: 300px;
+    line-height: 1.5em;
+}  
+#blogs ul{
+    list-style: none;
+}
+#blogs ul li{
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    font-weight: 600;
+    text-align: center;
+}
+#blogs ul li:first-child{
+    color: #F6C45C;
+}
+#article{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 50px 30px 15px;
+    line-height: 1.5em;
+}
+#article img{
+    width: 950px;
+}
+#lorem{
+    background-color: #ffffff;
+    padding: 20px;
+    width: 950px;
+}
+#lorem h3{
+    color: #3DC1CD;
+    font-style: italic;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+#lorem p{
+    color: #596065;
+    font-weight: 400;
+}
+#contact{
+    background-color: #596065;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+#contact h2{
+    border-bottom: 2px solid #ffffff32;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#contact p{
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 1.5em;
+}
+#contact button{
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    background-color: #3DC1CD;
+    border: 0px;
+    padding: 8px 3px;
+    width: 170px;
+    color: #ffffff;
+    font-weight: 500;
+}
+iframe{
+    width: 100%;
+}
+#finale{
+    display: flex;
+    background-color: #383B3C;
+    color: #ffffff;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    font-weight: 800;
+}
+#finale h3{
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: medium;
+}
+#tink{
+    margin: 5px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+#tink::first-letter{
+    color:#F6C45C;
+    font-size: 1.6em;
+}
+#copy p:last-child{
+    color: #ffffff;
+    font-weight: 300;
+}
+#copy span{
+    color:#F6C45C;
+    font-weight: 800;
+}
+#adresse{
+    display: flex;
+    flex-direction: row;
+    line-height: 1.5em;
+    /* hauteur totale de ligne (txt+interligne)= 1.5 fois la hauteur du txt */
+    font-weight: 600;
+}
+#adresse p:first-child{
+    border-right: 2px solid #ffffff32;
+    padding-right: 10px;
+    font-weight: 400;
+}
+#adresse p:last-child{
+    padding-left: 10px;
+    font-weight: 400;
+}
+#info{
+    line-height: 1.5em;
+    font-weight: 600;
+}
+#info span{
+    font-weight: 300;
+}
+#reso{
+    margin-bottom: 30px;
+}
+#reso i{
+    background-color: #ffffff;
+    color: #383B3C;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: auto;
+    text-align: center;
+    padding: 4px 2px 2px 2px;
+}
+@media only screen and (max-width: 900px){
+    header{
+        width: 100%;
+    }
+    nav label{
+        display: flex;
+        justify-content: center ;
+        color:#00000070;
+        width: 45px;
+        height: 45px;
+        border: 2px solid #00000070;
+        border-radius: 20%;
+        /* apparition icon */
+        align-items: center;
+        background-color: #ffffffdb;
+        position: fixed;
+        right: 15px;
+        top: 55px;
+        transition: all .2s ease-in-out;
+    }
+    nav a{
+        color: #F69536;
+    }
+    .cassebonbon{
+        display: none;
+        /* annul apparition list vr HTML LABEL */
+        position: fixed;
+         /* retrait du flux La position absolue (position:absolute) permet de ne pas dépendre de l'ordre dans lequel les éléments HTML sont déclarés dans le code, contrairement aux flottants que nous verrons plus tard.
+        La position absolue s'affranchit définitivement du cordon liant jusqu'alors intimement contenu et présentation. L'élément étant totalement extrait du flux, il ne dépend plus du tout des éléments qui le côtoient. Il faut voir le positionnement absolu comme étant une méthode radicale (mais puissante) qui retire tout à fait un élément du flux: il n'existe pour ainsi dire plus aux yeux des éléments qui, eux, restent dans le flux.*/
+        width: 70%;
+        left: 15%;
+        /* moitié espace restant/width */
+    }
+    .cassebonbon ul li a{
+        color: #144e58;
+    }
+    /* label:hover{
+        color: #F6C45C;
+        transform: rotate(180deg);
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgb(246, 149, 54);
+        box-shadow: 60px -16px rgb(246, 149, 54,0.42);
+    } */
+    #burger:checked ~ label{
+        box-shadow: 35px -10px rgb(246, 149, 54,0.42);
+        color: #F6C45C;
+        transform: rotate(180deg);
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgb(246, 149, 54);
+    }
+    #burger:checked ~ label i{
+        font-size: 30px;
+    }
+    /* #burger{ */
+        /* position: absolute; */
+        /* plus nécessaire car dans div */
+        /* L'élément est retiré du flux normal et aucun espace n'est créé pour l'élément sur la page. Il est ensuite positionné par rapport à son ancêtre le plus proche qui est positionné s'il y en a un ou par rapport au bloc englobant initial sinon. La position finale de l'élément est déterminée par les valeurs de top, right, bottom et left. */
+    /* } */
+    #burger:checked ~.cassebonbon{
+        display: flex;
+        background-color: #ffffff ;
+        border-radius: 40px;
+        border: 2px solid rgb(246, 149, 54);
+        align-items: flex-start;
+        justify-content: space-evenly;
+        box-shadow: 3px 3px 3px 3px rgba(246, 149, 54, 0.42);
+        box-shadow: 40px -16px rgb(246, 149, 54,0.42);
+        z-index: 1;
+    }
+    #burger:checked ~.cassebonbon ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* #burger:checked~.cassebonbon ul li{
+        margin: 30px;
+    } */
+    #burger:checked~.cassebonbon ul li a{
+        font-size: 20px;
+    }
+    /* #burger:active::after ~label{
+        transform:perspective(180deg)
+    } */
+        /* revoir pour croix */
+    .flexmain{
+    flex-direction: column;
+    }
+    #main1{
+    padding-bottom: 200px;
+    }
+    #finale{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #reso{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #infoglob{
+        text-align: center;
+    }
+    #loca{
+        text-align: center;
+        margin-top: 20px;
+        order: 3;
+    }
+    #copy{
+        text-align: center;
+    }
+    /* #carte{
+        background-size: cover;
+        width: 100%;
+        padding: 200px;
+        max-width:  800px;
+    max-width peut s’avérer tout de même très utile dans les tailles plus petites d’écran, lorsqu’un width: 100% rend l’image beaucoup trop grande.
+    } */
+    #contact{
+        width: 100%;
+    }
+    #blog{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #blogs{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    #blogs h2{
+        padding: 60px 0px 20px;
+        width: 60%;
+        margin: auto;
+    }
+    #blogs p,li{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin: auto;
+    }
+    #article{
+        width: 100%;
+        padding: 10px 30px;
+        align-items: center;
+    }
+    #article img,#lorem{
+        max-width: 100%;
+    }
+    #section2{
+        flex-direction: column;
+    }
+    .mosaique{
+        display: flex;
+        padding: 0;
+        width: 300px;
+    }
+    .mosaique img{
+        width: 200%;
+        flex: 1 0 100%;
+        /* Trois valeurs : flex-grow | flex-shrink | flex-basis */
+        /* La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur. */
+        /* La propriété CSS flex-grow définit le facteur d'expansion d'un élément flexible selon sa dimension principale. Elle indique la quantité d'espace restant que l'élément devrait consommer dans un conteneur flexible relativement à la taille des autres éléments du même conteneur. */
+        /* La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible. Si la taille de l'ensemble des éléments flexibles est supérieure à la taille du conteneur, les éléments seront comprimés selon leur facteur flex-shrink. */
+        /* a propriété flex-basis détermine la base de flexibilité utilisée comme taille initiale principale pour un élément flexible. Cette propriété détermine la taille de la boîte de contenu sauf si une autre boîte est visée par box-sizing. */
+        animation-duration: 10s;
+        /* durée */
+        animation-name: diapo;
+        animation-iteration-count: infinite; 
+    }
+    @keyframes diapo {
+        0%{
+            transform: translateX(0);
+        }
+        /* temps zéro */
+        /* position 0 sur x */
+        /* div temps par 5 100/5=20% */
+        /* reculer img svt */
+        20%{
+            transform: translateX(-385px);
+        }
+        40%{
+            transform: translateX(-770px);
+        }
+        /* La règle @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. Cela permet de contrôler une animation plus finement que ce qu'on pourrait obtenir avec les transitions. */
+        60%{
+            transform: translateX(-1155px);
+        }
+        80%{
+            transform: translateX(-1540px);
+        }
+        100%{
+            transform: translateX(-1925px);
+        }
+    }
+    .section2{
+        align-items: center;
+    }
+    .blue{
+        width: 100%;
+        text-align: center;
+    }
+    .blue h2{
+        padding-right: 0;
+        margin: auto;
+        text-align: center;
+    }
+    .blue p{
+        text-align: center;
+    }
+    #contact p{
+        width: 300px;
+    }
+    #lorem{
+        text-align: center;
+    }
+    #section3 p:first-child{
+        width: 300px;
+        margin-top: 10px;
+    }
+    #section3 p{
+        color: #ffffff;
+        padding-bottom: 20px;
+    }
+}
+    
+    
+
+
+
+
