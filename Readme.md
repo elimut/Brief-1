@@ -45,7 +45,13 @@ Ce que vous avez aimé dans ce projet.
 Ce qui a été appris.
 Retour individuel
 
-##Livrables:
+## Livrables:
 
 Lien de votre maquette Figma
 Support de présentation
+
+## Rendus
+
+[lien Figma](https://www.figma.com/file/8zj9zv8WJl2R6MPdkbRXPf/Brief-1?node-id=0%3A1&t=43ZA6PKxAb666hHI-1)
+
+Google slide:
