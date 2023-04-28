@@ -1,4 +1,4 @@
-#Brief 1 - Réaliser la maquette Figma d'un site vitrine
+# Brief 1 - Réaliser la maquette Figma d'un site vitrine
 
 25.11.2022
 
@@ -11,7 +11,7 @@ Vous reproduisez la maquette qui vous est fournie en utilisant l'outil Figma
 - Référentiels
 Concepteur⋅rice développeur⋅se d'applications
 
-##Ressource(s):
+## Ressource(s):
 
 Maquette en png
 Les images de la maquette
@@ -20,7 +20,7 @@ Le designer de votre entreprise à envoyer la maquette d'un site vitrine sous le
 
 Le client souhaite y apporter des modifications mais le lien de la maquette est introuvable et le designer ne repond pas aux mail et au telephone. Vous êtes charger par le chef de projet de reproduire la maquette afin de pouvoir y apporter des modifications si nécessaire. Le client se presentera dans 5 jours au bureau pour preciser les modifications qu'il souhaite. Votre temps est donc de cinq jours pour reproduire cette maquette.
 
-##Modalités pédagogiques:
+## Modalités pédagogiques:
 
 Vous avez toute la semaine pour réaliser la maquette de la page d'accueil du site.
 
@@ -34,7 +34,7 @@ Ce travail est réalisé en individuel.
 
 Le résultat final doit être exactement conforme à la maquette originale. Le positionnement et les proportions des éléments doivent être respecter. Vous respectez aussi les couleurs ainsi que l'iconographie.
 
-##odalités d'évaluation:
+## Modalités d'évaluation:
 
 Retour individuel du formateur après vos rendus sur Simplonline
 Soutenance : à l’aide d’un support de présentation vous devez présenter :
@@ -54,4 +54,10 @@ Support de présentation
 
 [lien Figma](https://www.figma.com/file/8zj9zv8WJl2R6MPdkbRXPf/Brief-1?node-id=0%3A1&t=43ZA6PKxAb666hHI-1)
 
-Google slide:
+[Google slide1](rendu/Google_Slide_1.jpg)
+[Google slide2](rendu/Google_Slide_2.jpg)
+[Google slide3](rendu/Google_Slide_3.jpg)
+[Google slide4](rendu/Google_Slide_4.jpg)
+[Google slide5](rendu/Google_Slide_5.jpg)
+[Google slide6](rendu/Google_Slide_6.jpg)
+
