@@ -54,10 +54,14 @@ Support de présentation
 
 [lien Figma](https://www.figma.com/file/8zj9zv8WJl2R6MPdkbRXPf/Brief-1?node-id=0%3A1&t=43ZA6PKxAb666hHI-1)
 
-[Google slide1](rendu/Google_Slide_1.jpg)
-[Google slide2](rendu/Google_Slide_2.jpg)
-[Google slide3](rendu/Google_Slide_3.jpg)
-[Google slide4](rendu/Google_Slide_4.jpg)
-[Google slide5](rendu/Google_Slide_5.jpg)
-[Google slide6](rendu/Google_Slide_6.jpg)
+![Google slide1](rendu/Google_Slide_1.jpg)
+![Google slide2](rendu/Google_Slide_2.png)
+![Google slide3](rendu/Google_Slide_3.png)
+![Google slide4](rendu/Google_Slide_4.png)
+![Google slide5](rendu/Google_Slide_5.png)
+![Google slide6](rendu/Google_Slide_6.png)
 
+Visu Figma:
+
+![Figma](rendu/Figma_1.PNG)
+![Figma](rendu/Figma_2.PNG)
